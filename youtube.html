@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>YouTube Practice</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <style>
+         .thumbnail {
+            width: 300px;
+            margin-bottom: 10px;
+         }
+
+         .search-bar {
+            display: block;
+         }
+
+         .video-div {
+            width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 15px;
+            font-family: Roboto, Arial;
+         }
+
+         .title {
+            margin-top: 0px;
+         }
+
+         .channel-edit {
+            border-radius: 50px;
+            width: 100%;
+         }
+
+         .chan-edit {
+            width: 50px;
+            margin-right: 10px;
+            vertical-align: top;
+         }
+
+         .channel1-edit {
+            border-radius: 50px;
+            width: 50px;
+         }
+
+         .text-edit {
+            width: 200px;
+            vertical-align: top;
+         }
+
+         .chan-edit,
+         .text-edit {
+            display: inline-block;
+         }
+
+         .chan1-edit {
+            width: 50px;
+            margin-right: 10px;
+            vertical-align: top;
+         }
+
+         .text1-edit {
+            width: 200px;
+            vertical-align: top;
+         }
+
+         .chan1-edit,
+         .text1-edit {
+            display: inline-block;
+         }
+      </style>
+   </head>
+   <body>
+      <input class="search-bar" placeholder="Search" type="text">
+     
+      <!-- Video 1 -->
+      <div class="video-div">
+         <div>
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+         </div>
+         <div>
+            <div class="chan-edit">
+               <img class="channel-edit" src="channels/channel-1.jpeg">
+            </div>
+            <div class="text-edit">
+               <p class="title">
+                  <strong>Talking Tech and AI with Google CEO Sundar Pichai!</strong>
+               </p>
+               <p class="author">
+                  Marques Brownlee
+               </p>
+               <p class="views">
+                  3.4M views &#183; 6 months ago
+               </p>
+            </div>
+         </div>
+      </div>
+
+       <!-- Video 2 -->
+       <div class="video-div">
+         <div>
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+         </div>
+         <div>
+            <!-- Added class="..." here -->
+            <div class="chan1-edit">
+               <img class="channel1-edit" src="channels/channel-2.jpeg">
+            </div>
+            <!-- Added class="..." here -->
+            <div class="text1-edit">
+               <p class="title">
+                  <strong>Try Not To Laugh Challenge #9</strong>
+               </p>
+               <p class="author">
+                  Markiplier
+               </p>
+               <p class="views">
+                 19M views &#183; 4 years ago
+               </p>
+            </div>
+         </div>
+      </div>
+
+      <!-- Video 3 (Wrapped like 1 and 2) -->
+      <div class="video-div">
+         <div>
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+         </div>
+         <div>
+            <div class="chan-edit">
+               <img class="channel-edit" src="channels/channel-3.jpeg">
+            </div>
+            <div class="text-edit">
+               <p class="title">
+                  <strong>Crazy Tik Toks Taken Moments Before DISASTER</strong>
+               </p>
+               <p class="author">
+                  SSSniperWolf
+               </p>
+               <p class="views">
+                 12M views &#183; 1 years ago
+               </p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
