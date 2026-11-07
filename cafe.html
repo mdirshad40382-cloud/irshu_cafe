@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>irshu_cafe - Premium Coffee & Eats</title>
+    <style>
+        /* Basic Reset & Fonts */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #f5f5f5;
+            padding-bottom: 50px;
+        }
+
+        /* Header / Navbar */
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ff9f43;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            color: #ff9f43;
+            font-size: 28px;
+            letter-spacing: 1.5px;
+        }
+
+        header p {
+            color: #aaa;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* Table Selector UI */
+        .table-info {
+            background-color: #252525;
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            border-left: 4px solid #ff9f43;
+        }
+
+        .table-info span {
+            font-weight: bold;
+            color: #ff9f43;
+        }
+
+        /* Section Headings */
+        .section-title {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        /* Menu Items List */
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .menu-card {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .item-details h3 {
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .item-details p {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #ff9f43;
+            font-size: 15px;
+        }
+
+        .add-btn {
+            background-color: #ff9f43;
+            color: #121212;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .add-btn:hover {
+            background-color: #e08833;
+        }
+
+        /* Footer & Order Summary */
+        .footer-action {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1e1e1e;
+            padding: 15px 20px;
+            border-top: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .order-btn {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .order-btn:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>irshu_cafe</h1>
+        <p>Fresh Brews & Delicious Bites</p>
+    </header>
+
+    <div class="container">
+        <!-- Table Info -->
+        <div class="table-info">
+            <p>Welcome to Table: <span>04</span></p>
+            <p>Status: <span style="color: #27ae60;">Active</span></p>
+        </div>
+
+        <!-- Hot Beverages -->
+        <h2 class="section-title">☕ Hot Coffee & Drinks</h2>
+        <div class="menu-list">
+            <div class="menu-card">
+                <div class="item-details">
+                    <h3>Classic Cappuccino</h3>
+                    <p>Rich espresso with steamed milk foam</p>
+                    <span class="price">₹120</span>
+                </div>
+                <button class="add-btn">ADD</button>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-details">
+                    <h3>Dark Hazelnut Latte</h3>
+                    <p>Espresso with hazelnut syrup & hot milk</p>
+                    <span class="price">₹150</span>
+                </div>
+                <button class="add-btn">ADD</button>
+            </div>
+        </div>
+
+        <!-- Quick Snacks -->
+        <h2 class="section-title" style="margin-top: 30px;">🥪 Burgers & Bites</h2>
+        <div class="menu-list">
+            <div class="menu-card">
+                <div class="item-details">
+                    <h3>Cheese Grilled Sandwich</h3>
+                    <p>Loaded with mozzarella & veggies</p>
+                    <span class="price">₹140</span>
+                </div>
+                <button class="add-btn">ADD</button>
+            </div>
+
+            <div class="menu-card">
+                <div class="item-details">
+                    <h3>Crispy Veg Burger</h3>
+                    <p>Herb patty with fresh mayo & lettuce</p>
+                    <span class="price">₹110</span>
+                </div>
+                <button class="add-btn">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Bar / Checkout Preview -->
+    <div class="footer-action">
+        <div>
+            <p style="font-size: 12px; color: #aaa;">Total Amount</p>
+            <p style="font-size: 18px; font-weight: bold; color: #ff9f43;">₹0.00</p>
+        </div>
+        <button class="order-btn">Confirm Order</button>
+    </div>
+
+</body>
+</html>
